@@ -1,33 +1,63 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: #D2DBDD;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+
+}
+.partyList{
+  width: auto;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+ul{
+  list-style: none;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: row;
+
+
+}
+.partyListItem{
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+input{
+  height: 1.5em;
+  border: none;
+  margin: 5px;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+.card{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    border: 4px solid gray;
+    box-shadow: 10px 10px 5px grey;
+    margin-top: 12px;
+    border-radius: 5px;
+    height: 200px;
+    margin: 8px;
+    padding: 3px;
+}
+.card > div.tom {
+  flex-grow: 1;
+}
+.card > div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+}
+.card > div:nth-child(2) > div:first-child {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+span:hover{
+  cursor: pointer;
 }
